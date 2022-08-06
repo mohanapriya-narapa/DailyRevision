@@ -22,6 +22,7 @@ public class deletedMiddleNode {
 		first.next=second;
 		second.next=three;
 		deleteNode(second);
+		//delete node
 		printList(head);
 	}
 	private static void deleteNode(Node head) {

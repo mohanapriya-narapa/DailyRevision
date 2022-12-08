@@ -1,9 +1,11 @@
-package CTCI_chapter_two;
+package ctci_linkedlists;
 
 import java.util.Stack;
 
-public class Palindrome {
-	public static class Node
+import CTCI_chapter_two.Palindrome.Node;
+
+public class palindrome {
+	private static class Node
 	{
 		int data;
 		Node next;
@@ -18,15 +20,13 @@ public class Palindrome {
 		Node first=new Node(0);
 		Node second=new Node(1);
 		Node third=new Node(2);
-		Node fourth=new Node(2);
+		Node fourth=new Node(1);
 		Node fifth=new Node(0);
 		first.next=second;
 		second.next=third;
 		third.next=fourth;
 		fourth.next=fifth;
 		boolean result=palindrome(first);
-		System.out.println(result);
-		
 	}
 	private static boolean palindrome(Node first) {
 		// TODO Auto-generated method stub

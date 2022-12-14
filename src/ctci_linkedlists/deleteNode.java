@@ -24,11 +24,22 @@ first.next=second;
 second.next=third;
 third.next=fourth;
 fourth.next=fifth;
-deleteNode(head);
+deleteNode(fourth);
+print(head);
 	}
-	private static void deleteNode(Node head) {
+	private static void print(Node head) {
 		// TODO Auto-generated method stub
-		
+		while(head!=null)
+		{
+			System.out.println(head.data);
+			head=head.next;
+		}
+	}
+	private static void deleteNode(Node n) {
+		// TODO Auto-generated method stub
+		Node next=n.next;
+		n.data=next.data;
+		n.next=next.next;
 	}
 
 }

@@ -53,7 +53,6 @@ public static class TreeNode
 	{
 		return false;
 	}
-	//subtree
 	return isIdentical(s.left,t.left) && isIdentical(s.right,t.right);
 	}
 

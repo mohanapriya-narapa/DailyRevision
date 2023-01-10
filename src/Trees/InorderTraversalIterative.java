@@ -32,6 +32,7 @@ public class InorderTraversalIterative {
 	}
 	private static void InorderIterativeTraversal(TreeNode root) {
 		// TODO Auto-generated method stub
+		
 		Stack<TreeNode> st=new Stack<TreeNode>();
 		TreeNode cur=root;
 		while(cur!=null || !st.isEmpty())

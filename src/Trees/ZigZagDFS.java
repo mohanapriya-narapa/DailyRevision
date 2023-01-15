@@ -1,9 +1,12 @@
 package Trees;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ListOfDepths {
+import Trees.ListOfDepths.TreeNode;
+
+public class ZigZagDFS {
 	public static class TreeNode
 	{
 		public int data;
@@ -29,11 +32,26 @@ public class ListOfDepths {
 		right.left=rightchild1;
 		right.right=rightchild2;
 		List<List<Integer>> result=new LinkedList<>();
-		listOfDepths(root,result,0);
-		System.out.println(result);
+	ZigZagTraversal(root,result,0);
+	 List<List<Integer>> resultNew=new LinkedList<>();
+     boolean leftToRight=true;
+     for(List<Integer> li:result)
+     {List<Integer> linew=new LinkedList<>();
+         for(int x:li)
+{
+linew.add(x);
+} 
+if(!leftToRight)
+{
+Collections.reverse(linew);
+}      
+resultNew.add(linew);
+leftToRight=!leftToRight;
+}
+System.out.println(resultNew);
 	}
 
-	private static void listOfDepths(TreeNode root, List<List<Integer>> result, int level) {
+	private static void ZigZagTraversal(TreeNode root, List<List<Integer>> result, int level) {
 		// TODO Auto-generated method stub
 		if(root==null)
 			return;
@@ -44,8 +62,8 @@ public class ListOfDepths {
 		}
 		List<Integer> li=result.get(level);
 		li.add(root.data);
-		listOfDepths(root.left, result, level+1);
-		listOfDepths(root.right, result, level+1);
+		ZigZagTraversal(root.left, result, level+1);
+		ZigZagTraversal(root.right, result, level+1);
 	}
 
 }

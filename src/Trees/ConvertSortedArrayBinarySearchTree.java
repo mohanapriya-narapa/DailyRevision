@@ -28,6 +28,7 @@ public class ConvertSortedArrayBinarySearchTree {
 		System.out.println(root.data);
 		printTree(root.left);
 		printTree(root.right);
+		//print tree
 	}
 	private static TreeNode maxPathSum(int[] nums) {
 		// TODO Auto-generated method stub

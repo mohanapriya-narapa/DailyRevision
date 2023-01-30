@@ -49,9 +49,7 @@ while(!qu.isEmpty())
 	{
 		qu.add(tempnode.right);
 	}
-}
-
-		
+}	
 	}
 
 }

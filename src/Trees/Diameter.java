@@ -1,7 +1,5 @@
 package Trees;
-
 import Trees.MInDistanceNodes.TreeNode;
-
 public class Diameter {
 	public static int diameter;
 	public static class TreeNode
@@ -41,5 +39,4 @@ public class Diameter {
 		diameter=Math.max(diameter, left+right);
 		return Math.max(left,right)+1;
 	}
-
 }

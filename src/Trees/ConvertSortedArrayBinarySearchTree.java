@@ -48,5 +48,4 @@ root.left=makeTree(nums,start, mid-1);
 root.right=makeTree(nums,mid+1, end);
 return root;
 	}
-
 }

@@ -9,7 +9,7 @@ public class KthLargest {
 		int[] nums=new int[] {3,2,1,5,6,4};
 		
 System.out.println(kthLargest(nums,2));
-	}
+	} 
 
 	private static int kthLargest(int[] nums, int k) {
 		// TODO Auto-generated method stub

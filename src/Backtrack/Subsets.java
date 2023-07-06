@@ -17,11 +17,11 @@ System.out.println(ans);
 
 	private static void backtrack(List<Integer> cur, int i, List<List<Integer>> ans, int[] nums) {
 		// TODO Auto-generated method stub
-//		if(i>nums.length)
-//			
-//		{
-//			return;
-//		}
+		if(i>nums.length)
+			
+		{
+			return;
+		}
 		ans.add(new ArrayList<>(cur));
 		for(int j=i;j<nums.length;j++)
 		{

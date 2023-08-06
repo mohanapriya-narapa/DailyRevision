@@ -20,7 +20,7 @@ System.out.println(LongestCommonSubsequenceRecursive("AGGTAB", "GXTXAYB",6, 7 ))
 		}
 		else
 		{
-			return Math.max(LongestCommonSubsequenceRecursive(str1,str2,m,n-1), LongestCommonSubsequenceRecursive(str1,str2,m-1,n-1));
+			return Math.max(LongestCommonSubsequenceRecursive(str1,str2,m,n-1), LongestCommonSubsequenceRecursive(str1,str2,m-1,n));
 		}
 		
 	}

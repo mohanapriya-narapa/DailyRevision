@@ -34,7 +34,7 @@ System.out.println(x);
 		// TODO Auto-generated method stub
 int i=start;
 int j=nums.length-1;
-while(i>j)
+while(i<j)
 {
 	swap(nums,i,j);
 	i++;

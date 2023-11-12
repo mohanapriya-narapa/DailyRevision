@@ -33,7 +33,11 @@ public class PartitionList {
 	}
 	private static void print(Node result) {
 		// TODO Auto-generated method stub
-		
+	while(n!=null)
+	{
+		System.out.println(n.data);
+		n=n.next;
+	}
 	}
 	private static Node partitionList(Node n, int x) {
 		// TODO Auto-generated method stub

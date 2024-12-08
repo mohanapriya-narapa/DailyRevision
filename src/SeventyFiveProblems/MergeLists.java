@@ -46,7 +46,7 @@ public static class Node
 			if(l1==null || (l2!=null && l2.data<l1.data))
 			{
 				current.next=l2;
-				l2=l2.next;
+l2=l2.next;
 				current=current.next;
 			}
 			else {
